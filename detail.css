@@ -1,0 +1,1702 @@
+@import url("https://fonts.googleapis.com/css?family=Amiri");
+.main_contents .main_title {
+  background: no-repeat center;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+}
+.main_contents .main_title:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: url("https://www.fate-go.jp/assets/img/pc/common/line.png") repeat-x center;
+  position: absolute;
+  bottom: -1px;
+}
+
+.pc_mode .main_contents {
+  background: url("https://www.fate-go.jp/assets/img/pc/common/bg_logo.png") fixed no-repeat -180px center, url("https://www.fate-go.jp/assets/img/pc/common/bg_logo.png") fixed no-repeat right -180px center;
+}
+.pc_mode .main_contents .main_title {
+  background-image: url("https://www.fate-go.jp/assets/img/pc/common/bg_title.jpg");
+  padding: 110px 0 47px;
+}
+.pc_mode .main_contents .main_title img {
+  width: auto;
+  height: 80px;
+}
+
+.sp_mode .main_contents {
+  background: url("https://www.fate-go.jp/assets/img/sp/common/bg_logo.png") fixed no-repeat center;
+}
+.sp_mode .main_contents .main_title {
+  background-image: url("https://www.fate-go.jp/assets/img/sp/common/bg_title.jpg");
+  padding: 155px 0 47px;
+}
+.sp_mode .main_contents .main_title img {
+  width: 100%;
+}
+
+.main_contents .main_title {
+  margin-bottom: 80px;
+}
+
+.tab_news {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.tab_news ul {
+  letter-spacing: -.4em;
+  margin-bottom: 30px;
+}
+.tab_news li {
+  position: relative;
+}
+.tab_news li.current {
+  background-position: bottom;
+}
+.tab_news li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.pc_mode .tab_news li {
+  display: inline-block;
+  margin-right: 7px;
+  width: 154px;
+  height: 36px;
+}
+.pc_mode .tab_news li.last-child {
+  margin-right: 0;
+}
+.pc_mode .tab_news .news {
+  background: url("https://www.fate-go.jp/assets/img/pc/in_news/tab_notice.jpg");
+}
+.pc_mode .tab_news .maint {
+  background: url("https://www.fate-go.jp/assets/img/pc/in_news/tab_maint.jpg");
+}
+.pc_mode .tab_news .update {
+  background: url("https://www.fate-go.jp/assets/img/pc/in_news/tab_update.jpg");
+}
+.pc_mode .tab_news .trauble {
+  background: url("https://www.fate-go.jp/assets/img/pc/in_news/tab_trouble.jpg");
+}
+
+.sp_mode .tab_news ul {
+  margin: 0 30px 25px;
+}
+.sp_mode .tab_news li {
+  width: 340px;
+  height: 58px;
+  margin-bottom: 10px;
+}
+.sp_mode .tab_news li:nth-child(odd) {
+  float: left;
+}
+.sp_mode .tab_news li:nth-child(even) {
+  float: right;
+}
+.sp_mode .tab_news .news {
+  background: url("https://www.fate-go.jp/assets/img/sp/in_news/tab_notice.jpg");
+}
+.sp_mode .tab_news .maint {
+  background: url("https://www.fate-go.jp/assets/img/sp/in_news/tab_maint.jpg");
+}
+.sp_mode .tab_news .update {
+  background: url("https://www.fate-go.jp/assets/img/sp/in_news/tab_update.jpg");
+}
+.sp_mode .tab_news .trauble {
+  background: url("https://www.fate-go.jp/assets/img/sp/in_news/tab_trouble.jpg");
+}
+
+.list_news {
+  border-top: 1px solid #e0dfce;
+  margin-bottom: 65px;
+}
+.list_news li {
+  border-bottom: 1px solid #e0dfce;
+  background: url("https://www.fate-go.jp/assets/img/pc/in_news/arrow.png") no-repeat right center;
+  height: 104px;
+  width: 100%;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 30px 50px 0px 40px;
+  position: relative;
+}
+.list_news li .date {
+  font-size: 14px;
+  margin-bottom: 13px;
+}
+.list_news li .title {
+  line-height: 1.4;
+}
+.list_news li a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: block;
+}
+.list_news li:before {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: "";
+  display: block;
+  background: #dcdcdc;
+  opacity: 0.0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.list_news li:hover:before {
+  width: 100%;
+  opacity: 0.3;
+}
+
+.pc_mode .list_news {
+  min-width: 1120px;
+}
+
+.sp_mode .list_news li {
+  background: url("https://www.fate-go.jp/assets/img/sp/in_news/arrow.png") no-repeat right center;
+  height: 120px;
+}
+.sp_mode .list_news li .date {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.sp_mode .list_news li .title {
+  font-size: 26px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.pager {
+  text-align: center;
+  padding-bottom: 80px;
+}
+.pager p {
+  display: inline-block;
+  margin: 0 15px;
+}
+.pager a {
+  display: block;
+  overflow: hidden;
+  text-indent: -500px;
+  width: 100%;
+  height: 100%;
+}
+.pager .prev {
+  background: url("https://www.fate-go.jp/assets/img/pc/common/btn_prev.png");
+  width: 155px;
+  height: 34px;
+}
+.pager .next {
+  background: url("https://www.fate-go.jp/assets/img/pc/common/btn_next.png");
+  width: 155px;
+  height: 34px;
+}
+
+.pc_mode .pager p {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.pc_mode .pager p:hover {
+  opacity: 0.6;
+}
+
+.news_detail {
+  position: relative;
+  width: 690px;
+  margin: 40px auto 50px;
+  background: url("https://www.fate-go.jp/assets/img/pc/in_news/frame_repeat.png") repeat-y center;
+}
+.news_detail:before {
+  content: url("https://www.fate-go.jp/assets/img/pc/in_news/frame_head.png");
+  position: absolute;
+  left: 0;
+  top: -3px;
+}
+.news_detail:after {
+  content: url("https://www.fate-go.jp/assets/img/pc/in_news/frame_bottom.png");
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+.news_detail h2 {
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+.news_detail img {
+  margin: 0;
+  max-width: 100%;
+  height: auto;
+  vertical-align: baseline;
+}
+.news_detail .date {
+  font-weight: 700;
+}
+.news_detail .title {
+  font-weight: 700;
+}
+.news_detail .title-box {
+  margin-bottom: 30px;
+}
+
+.pc_mode .news_detail .date {
+  font-size: 16px;
+}
+.pc_mode .news_detail .title {
+  font-size: 24px;
+}
+
+.sp_mode .news_detail:before {
+  top: -13px;
+}
+.sp_mode .news_detail:after {
+  bottom: -15px;
+}
+.sp_mode .news_detail .date {
+  font-size: 30px;
+}
+.sp_mode .news_detail .title {
+  font-size: 40px;
+}
+
+.btn_backindex {
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.pc_mode .btn_backindex img {
+  height: 34px;
+}
+.pc_mode .btn_backindex a {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.pc_mode .btn_backindex a:hover {
+  opacity: 0.6;
+}
+
+#news_color {
+  width: auto !important;
+  padding: 40px 45px;
+  margin: 0 3px !important;
+}
+
+main .article .title-box .date {
+  color: #225799;
+}
+
+main .article {
+  text-align: center;
+}
+main .article .title-box {
+  text-align: left;
+}
+main .article p {
+  text-align: left;
+}
+
+.sp_mode .news_detail .article {
+  -webkit-text-size-adjust: auto;
+}
+.sp_mode .news_detail .article .title-box {
+  -webkit-text-size-adjust: 100%;
+}
+
+.news_detail .float_box {
+  overflow: hidden;
+}
+.news_detail .float_box .float_none_box {
+  float: none;
+}
+.news_detail .float_box .float_left_box {
+  float: left;
+}
+.news_detail .float_box .float_right_box {
+  float: right;
+}
+
+@charset "utf-8";
+/* 色変更時用CSS */
+
+/* 菱形 */
+.diamond {
+	color:#FF71C5 ;
+}
+
+/* 小見出し */
+.tips {
+    border-color: #FACCFF;
+}
+
+.tips::before {
+    color: #F84879;
+}
+
+.notice2{
+	color: #E30003;
+}
+
+/* 数字小見出し */
+.tips_1 {
+    font-weight: bold;
+    font-size: 103%;
+    border-bottom: solid 3px #ccf4ff;
+    position: relative;
+	padding: 5px 0px 2px 0px;
+    line-height: 30px;
+}
+
+.tips_1::before {
+    content: "1";
+	color: white;
+	font-size: 1.1em;
+	line-height: 26px;
+	vertical-align: middle;
+	display: inline-block;
+	background: #40d6ff;
+	font-weight: bold;
+	width: 25px;
+	text-align: center;
+	height: 25px;
+	border: solid 6px white; 
+	border-radius: 50%;
+	margin-left: -10px; 
+}
+
+
+.tips_2 {
+    font-weight: bold;
+    font-size: 103%;
+    border-bottom: solid 3px #ccf4ff;
+    position: relative;
+	padding: 5px 0px 2px 0px;
+    line-height: 30px;
+}
+
+.tips_2::before {
+    content: "2";
+	color: white;
+	font-size: 1.1em;
+	line-height: 26px;
+	vertical-align: middle;
+	display: inline-block;
+	background: #40d6ff;
+	font-weight: bold;
+	width: 25px;
+	text-align: center;
+	height: 25px;
+	border: solid 6px white; 
+	border-radius: 50%;
+	margin-left: -10px; 
+}
+
+
+/*ニュース用CSS手打ち分*/
+
+body {
+	font: 100% "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+	margin: 0;
+	padding: 0;
+	height: auto;
+	color: #000;
+		
+}
+main .article{
+	max-width: 594px;
+}
+div.article p {
+	font-size: 0.9em;
+	line-height: 1.4em;
+	margin-bottom: 15px;
+	width: 100%;
+	word-wrap: break-word;
+}
+
+.indent {
+text-indent: -1em;
+padding-left: 1em;
+display: block;
+}
+ul.indent_list {
+margin-bottom: 15px;
+word-wrap: break-word;
+}
+ul.indent_list li {
+font-size:0.9em;
+line-height: 1.4em;
+text-indent: -1em;
+padding-left: 1em;
+}
+
+
+.strong {
+	font-weight: bold;
+}
+.em01 {
+	display: block;
+	margin: 0;
+	padding-left: 1em;
+}
+.diamond {
+	color: #cb0000;
+}
+.notice {
+	color: #FF0057;
+	font-weight: bold;
+}
+.notice_em01 {
+	display: block;
+	color: #FF0057;
+	font-weight: bold;
+	margin: 0;
+	padding-left: 1em;
+}
+.star {
+	color: #c0972d;
+	font-weight: bold;
+}
+.servant_star {
+	color: #FFD500;
+	text-shadow: 1px 1px 1px #000000;
+	font-size: 110%;
+}
+.gainen_ttl {
+	color: #053976;
+	font-weight: bold;
+}
+.gainen_atk {
+	color: #ff000c;
+	font-weight: bold;
+}
+.gainen_hp {
+	color: #0024ff;
+	font-weight: bold;
+}
+.gainen_skill {
+	color: #0072ff;
+	font-weight: bold;
+}
+.skill01 {
+	display: block;
+    padding-left: 2em;
+}
+.table_color{
+	color: #000;
+}
+table {
+	font-size: 0.9em;
+	border-spacing: 0;
+	color: #000;
+}
+table th {
+	color: #fff;
+	padding: 8px 15px;
+	background: no-repeat 2% center, rgb(2,41,88); /* Old browsers */
+	background: no-repeat 2% center, -moz-linear-gradient(top, rgba(2,41,88,1) 0%, rgba(9,77,157,1) 87%, rgba(9,77,157,1) 100%); /* FF3.6+ */
+	background: no-repeat 2% center, -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(2,41,88,1)), color-stop(87%, rgba(9,77,157,1)), color-stop(100%, rgba(9,77,157,1))); /*  Chrome,Safari4+ */
+	background: no-repeat 2% center, -webkit-linear-gradient(top, rgba(2,41,88,1) 0%, rgba(9,77,157,1) 87%, rgba(9,77,157,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: no-repeat 2% center, -o-linear-gradient(top, rgba(2,41,88,1) 0%, rgba(9,77,157,1) 87%, rgba(9,77,157,1) 100%); /* Opera 11.10+ */
+	background: no-repeat 2% center, -ms-linear-gradient(top, rgba(2,41,88,1) 0%, rgba(9,77,157,1) 87%, rgba(9,77,157,1) 100%); /* IE10+ */
+	background: no-repeat 2% center, linear-gradient(to bottom, rgba(2,41,88,1) 0%, rgba(9,77,157,1) 87%, rgba(9,77,157,1) 100%); /* W3C */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#022958', endColorstr='#094d9d', GradientType=0 ); /* IE6-9 */
+	font-weight: bold;
+	border-left: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	line-height: 120%;
+	text-align: center;
+	text-shadow: 1px 1px 4px #000000;
+	box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset;
+}
+table th.red {
+	color: #fff;
+	padding: 8px 15px;
+	background: no-repeat 2% center, rgb(90,15,27); /* Old browsers */
+	background: no-repeat 2% center, -moz-linear-gradient(top, rgb(90,15,27) 0%, rgb(207,35,36) 100%); /* FF3.6+ */
+	background: no-repeat 2% center, -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(90, 15, 27)), color-stop(87%, rgba(207, 35, 36)), color-stop(100%, rgba(207, 35, 36))); /* 	Chrome,Safari4+ */
+	background: no-repeat 2% center, -webkit-linear-gradient(top, rgb(90,15,27) 0%, rgb(207,35,36) 100%);
+	; /* Chrome10+,Safari5.1+ */
+	background: no-repeat 2% center, -o-linear-gradient(top, rgb(90,15,27) 0%, rgb(207,35,36) 100%); /* Opera 11.10+ */
+	background: no-repeat 2% center, -ms-linear-gradient(top, rgb(90,15,27) 0%, rgb(207,35,36) 100%); /* IE10+ */
+	background: no-repeat 2% center, linear-gradient(to bottom, rgba(90,15,27,1) 0%, rgba(207,35,36,1) 87%, rgba(207,35,36,1) 100%); /* W3C */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#022958', endColorstr='#094d9d', GradientType=0 ); /* IE6-9 */
+	font-weight: bold;
+	border-left: 1px solid #666666;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	line-height: 120%;
+	text-align: center;
+	text-shadow: 1px 1px 4px #000000;
+	box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset;
+}
+table th:last-child {
+	border-right: 1px solid #666666;
+	box-shadow: 2px 2px 1px rgba(0,0,0,0.1), 0px 1px 1px rgba(255,255,255,0.3) inset;
+}
+table tr td {
+	padding: 8px 15px;
+	border-bottom: 1px solid #666666;
+	border-left: 1px solid #666666;
+}
+table tr td:last-child {
+	border-right: 1px solid #666666;
+	box-shadow: 2px 2px 1px rgba(0,0,0,0.1);
+}
+table tr {
+	background: #fff;
+}
+
+table.trbgcolor tr:nth-child(2n+1) {
+	background-color: #ECF2F3;
+}
+
+table.trbgcolor2 tr:nth-child(2n+2) {
+	background-color: #ECF2F3;
+}
+
+table td.right {
+	text-align: right;
+}
+table.table_non {
+	font-size: initial;
+	border-spacing: initial;
+}
+table.table_non th {
+	color: initial;
+	padding: initial;
+	background: initial;
+	filter: initial;
+	font-weight: initial;
+	border-left: initial;
+	border-top: initial;
+	border-bottom: initial;
+	line-height: initial;
+	text-align: initial;
+	text-shadow: initial;
+	box-shadow: initial;
+}
+table.table_non th:last-child {
+	border-right: initial;
+	box-shadow: initial;
+}
+table.table_non tr td {
+	padding: initial;
+	border-bottom: initial;
+	border-left: initial;
+}
+table.table_non tr td:last-child {
+	border-right: initial;
+	box-shadow: initial;
+}
+table.table_non tr {
+	background: initial;
+}
+table.table_non tr:last-child td {
+	box-shadow: initial;
+}
+table.table_non p, table.table_non td {
+	font-size: 95%;
+	line-height: 1.4em;
+}
+table.font_default p, table.font_default td {
+	font-size: 0.9em;
+	line-height: 1.4em;
+}
+.notice2 {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+dl.accordion {
+	width: 100%;
+	margin: 0 0 30px 0;
+	padding: 0;
+	font-size: 100%;
+	text-align: left;
+}
+dl.accordion dt {
+	background: url(/wp-content/uploads/2016/03/arrow_open.png) 97% center no-repeat #fb5e80;
+	background-size: 20px 20px;
+	border-bottom: 1px solid #EEE;
+	height: 40px;
+	font-size: 0.9em;
+	text-indent: 10px;
+	line-height: 40px;
+	color: #fff;
+	font-weight: bold;
+}
+dl.accordion dt.open {
+	background: url(/wp-content/uploads/2016/03/arrow_close.png) 97% center no-repeat #fb5e80;
+	background-size: 20px 20px;
+}
+dl.accordion dd {
+	display: none;
+	margin: 0 0 10px;
+}
+dl.accordion .open {
+	display: block;
+}
+.att {
+	padding-left: 1em;
+	text-indent: -1em;
+}
+.week {
+	font-size: 2em;
+	color: #00C2FD;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 1px 1px 1px #000000;
+}
+
+.center{
+	text-align: center;
+}
+
+.noticeicon {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #ffffff;
+	padding: 0px 2px;
+	background: -moz-linear-gradient(  top,  #fd6a88 0%,  #fd093a);
+	background: -webkit-gradient(  linear, left top, left bottom,  from(#fd6a88),  to(#fd093a));
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #fd093a;
+	-moz-box-shadow: 0px 1px 3px rgba(000,000,000,0.5),  inset 0px 0px 1px rgba(255,255,255,0.5);
+	-webkit-box-shadow: 0px 1px 3px rgba(000,000,000,0.5),  inset 0px 0px 1px rgba(255,255,255,0.5);
+	box-shadow: 0px 1px 3px rgba(000,000,000,0.5),  inset 0px 0px 1px rgba(255,255,255,0.5);
+	text-shadow: 0px -1px 0px rgba(000,000,000,0.7),  0px 1px 0px rgba(255,255,255,0.3);
+	width: 40px;
+	float: right;
+	text-align: center;
+}
+h2 {
+	color: #02509F;
+	margin-top: 0;
+	font-size: 1.1em;
+	text-shadow: 1px 1px 1px #000000;
+}
+.period{
+    box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.9), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+	background: linear-gradient(to bottom, rgba(2,41,88,1) 0%,rgba(9,77,157,1) 87%,rgba(9,77,157,1) 100%);
+	width: 100%;
+	margin-bottom:-10px;
+}
+.period_tx{
+	padding:10px 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 4px #000000;
+}
+.pb10{
+	padding-bottom:10px;
+}
+
+.box1 {
+    padding: 1em 1em 0 1em;
+    border: solid 1.5px #A0A0A0;
+	margin:10px;
+	
+}
+.box1 p {
+    margin: 0; 
+    padding: 0;
+}
+
+.float_box {
+  overflow: hidden;
+}
+.float_box .float_none_box {
+  float: none;
+}
+.float_box .float_left_box {
+  float: left;
+}
+.float_box .float_right_box {
+  float: right;
+}
+
+
+.article .table_box{
+	margin-bottom: 15px;
+}
+.article .table_box p{
+	margin: 0 0 5px 0;
+	padding: 0;
+	font-weight:bold;
+	float: none
+}
+
+.article .card_box{
+	margin: 0 0 15px 0;
+}
+
+.article .card_box p{
+	margin: 0 0 0 0;
+}
+
+.article .heading{
+	margin: 0 0 5px 0;
+}
+
+/*囲み枠*/
+.attention{
+	padding: 1em 1em 0 1em;
+	border: solid 1.5px #c2c2c2;
+	margin: 10px;
+}
+
+.attention_red {
+    padding: 1em 1em 0 1em;
+    border: solid 2px #e8000b;
+    margin: 10px;
+    background-color: #f7d2d4;
+}
+
+
+/*概念礼装*/
+.reisou_left{
+	width:30%;
+	vertical-align:top;
+}
+
+.reisou_left img{
+	align:left;
+	width:90%;
+	vertical-align:bottom;
+}
+
+.reisou_right{
+	 width:70%;
+	 vertical-align:top;
+}
+
+
+/*ひしがた*/
+main div.article *.dia {
+	color: #000;
+	font-weight: bold;
+	font-size: 0.9em;
+	margin: 0;
+}
+
+main div.article *.dia:after, main div.article *.dia:before {
+	display: inline-block;
+	font-size: 1em;
+	content: "◆";
+	color: #cb0000;
+	vertical-align: middle;
+	margin-bottom: .2em;
+}
+
+
+/*小見出し*/
+.tips {
+    font-weight: bold;
+    font-size: 103%;
+    border-bottom: solid 3px #661810;
+    position: relative;
+    padding: 3px;
+    line-height: 30px;
+}
+
+.tips::before {
+    content: "▶";
+    color: #89313a;
+    font-size: 1.2em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sut_col{
+	color: #0857F7;
+}
+.sun_col{
+	color: #FF0004;
+}
+
+
+
+/*intermission*/
+/**Right_image**/
+.intermission_left_txt{
+	width: 53%; 
+	min-width: 250px; 
+	padding-left: 1%; 
+}
+
+.intermission_left_txt .clear{
+float: left; 
+max-width: 210px;
+}
+
+.intermission_left_txt .item{
+   float: left; 
+	margin-left: 10px; 
+	width: 40px;
+}
+
+.intermission_right_img{
+    width: 46%;
+	vertical-align: bottom;
+}
+
+
+/***Left_image***/
+.intermission_right_txt{
+	width: 53%; 
+	min-width: 250px; 
+	padding-left: 1%; 
+}
+
+.intermission_right_txt .clear{
+float: left; 
+max-width: 210px;
+}
+
+.intermission_right_txt .item{
+   float: left; 
+	margin-left: 10px; 
+	width: 40px;
+}
+
+.intermission_left_img{
+    width: 46%;
+	vertical-align: bottom;
+}
+
+.intermission_itemlist{
+	margin: 0; 
+	max-width:800px;
+	text-align: right;
+}
+
+
+/*汎用小見出し*/
+.headline::before {
+    content: "■";
+    color: #cb0101;
+    font-size: 1.2em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.headline {
+    font-weight: bold;
+    font-size: 103%;
+}
+
+/*番号をリンクしない*/
+.no-tel a[href^="tel:"]  {
+    color: #000;
+    text-decoration: none;
+    pointer-events: none;
+}	
+
+/*赤字*/
+.font_red{
+	color: #FF0000;
+}
+
+/*追記*/
+.addition{
+	font-weight: bold;
+    font-size: 103%;	
+}
+
+
+/*破線 点線*/
+.dashed{
+  border-top: 1px dashed #bbb;
+  border-bottom: 1px dashed #eee;	
+}
+
+/* 表の背景水色 */
+.tb_col_dl{
+	background: no-repeat 2% center, rgb(0, 110, 150); /* Old browsers */
+	background: no-repeat 2% center, -moz-linear-gradient(top, rgb(0, 110, 150) 0%, rgb(20, 165, 210) 100%); /* FF3.6+ */
+	background: no-repeat 2% center, -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 110, 150)), color-stop(87%, rgba(20, 165, 210)), color-stop(100%, rgba(20, 165, 210))); /* 	Chrome,Safari4+ */
+	background: no-repeat 2% center, -webkit-linear-gradient(top, rgb(0, 110, 150) 0%, rgb(20, 165, 210) 100%);
+	; /* Chrome10+,Safari5.1+ */
+	background: no-repeat 2% center, -o-linear-gradient(top, rgb(0, 110, 150) 0%, rgb(20, 165, 210) 100%); /* Opera 11.10+ */
+	background: no-repeat 2% center, -ms-linear-gradient(top, rgb(0, 110, 150) 0%, rgb(20, 165, 210) 100%); /* IE10+ */
+	background: no-repeat 2% center, linear-gradient(to bottom, rgba(0, 110, 150,1) 0%, rgba(20, 165, 210,1) 87%, rgba(20, 165, 210,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006e96', endColorstr='#14a5d2', GradientType=0 ); /* IE6-9 */
+}
+
+
+/* 表の背景赤ピンク色 */
+.tb_col_pink {
+    background: no-repeat 2% center, rgb(190, 30, 40);
+    background: no-repeat 2% center, -moz-linear-gradient(top, rgb(190, 30, 40) 0%, rgb(230, 80, 90) 100%);
+    background: no-repeat 2% center, -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(190, 30, 40)), color-stop(87%, rgba(230, 80, 90)), color-stop(100%, rgba(230, 80, 90)));
+    background: no-repeat 2% center, -webkit-linear-gradient(top, rgb(190, 30, 40) 0%, rgb(230, 80, 90) 100%);
+    background: no-repeat 2% center, -o-linear-gradient(top, rgb(190, 30, 40) 0%, rgb(230, 80, 90) 100%);
+    background: no-repeat 2% center, -ms-linear-gradient(top, rgb(190, 30, 40) 0%, rgb(230, 80, 90) 100%);
+    background: no-repeat 2% center, linear-gradient(to bottom, rgba(190, 30, 40,1) 0%, rgba(230, 80, 90,1) 87%, rgba(230, 80, 90,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#be1e28', endColorstr='#e6505a', GradientType=0 );
+}
+
+
+.slash{
+	background: #bbb;
+}
+
+.table_box h2 {
+    color: #02509F;
+    margin-top: 0;
+    font-size: 1.1em;
+    text-shadow: 1px 1px 1px #c2c2c2;
+    font-weight: bold;
+}
+
+/*******item_list*******/
+
+.table_box .item_list{
+	border-right: 0;
+	box-shadow:0px 2px 0px rgba(0,0,0,0.1);
+}
+
+.table_box .item_list_02{
+	border-right: 0;
+	border-left: 0;
+	box-shadow:0px 2px 0px rgba(0,0,0,0.1);
+}
+
+
+.table_box .bd_l_none{
+	border-left: 0;
+	padding: 0;
+	box-shadow:0px 2px 0px rgba(0,0,0,0.1);
+}
+
+.table_box .item_img{
+	max-width: 100%;
+	margin-top: 5px;
+	display: block;
+}
+
+
+/*表の色変更*/
+
+.bg01{
+	background-color: #d5eaed;
+}
+
+.bg02{
+	background-color: #edd8db;
+}
+
+.bg03{
+	background-color: #f4e9e6;
+}
+
+.bg04{
+	background-color: #ECF2F3;
+}
+
+.txt{
+	font-size: 120%;
+	font-weight: bold;
+}
+
+@charset "UTF-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../sass/view/_common.scss */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 12, ../sass/view/_common.scss */
+.center {
+  text-align: center;
+}
+
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background: url("https://www.fate-go.jp/assets/img/pc/common/bg_ptn.gif");
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", Verdana, "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, Meiryo, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  font-weight: 400;
+}
+
+/****************/
+.pc_mode .sp {
+  display: none;
+}
+.pc_mode #wrapper {
+  min-width: 1120px;
+}
+
+.sp_mode .pc {
+  display: none;
+}
+.sp_mode #wrapper {
+  width: 750px;
+  min-width: 750px;
+  overflow: hidden;
+}
+.sp_mode .menu_on {
+  position: fixed;
+}
+.sp_mode .menu_on:after {
+  content: '';
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: #fff;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+}
+
+/**************/
+.main_contents {
+  opacity: 0;
+  -webkit-animation: loading 1.2s ease-in 0.3s forwards;
+  -moz-animation: loading 1.2s ease-in 0.3s forwards;
+  -o-animation: loading 1.2s ease-in 0.3s forwards;
+  animation: loading 1.2s ease-in 0.3s forwards;
+}
+
+.pc_mode {
+  /*.header_nav{
+  	opacity: 0;
+  -webkit-animation: loading 1.2s ease-in 0.3s forwards;
+     -moz-animation: loading 1.2s ease-in 0.3s forwards;
+       -o-animation: loading 1.2s ease-in 0.3s forwards;
+          animation: loading 1.2s ease-in 0.3s forwards;
+  }*/
+}
+
+@keyframes loading {
+  100% {
+    opacity: 1;
+  }
+}
+.header_nav .main_menu a, .header_nav h1 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.header_nav .menu_shere {
+  opacity: 0;
+  display: none;
+}
+
+.pc_mode .header_nav {
+  position: absolute;
+  background: url("https://www.fate-go.jp/assets/img/pc/common/menu/bg.png") repeat-x center top;
+  width: 100%;
+  min-width: 1120px;
+  height: 55px;
+  z-index: 50;
+}
+.pc_mode .header_nav h1, .pc_mode .header_nav ul, .pc_mode .header_nav li {
+  display: inline-block;
+}
+.pc_mode .header_nav .wrap_nav {
+  width: 1120px;
+  margin: auto;
+  letter-spacing: -.4em;
+  position: relative;
+}
+.pc_mode .header_nav .wrap_nav .main_menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.pc_mode .header_nav .wrap_nav li {
+  margin-left: 22px;
+  height: 55px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.pc_mode .header_nav .wrap_nav li:hover {
+  opacity: 0.6;
+}
+.pc_mode .header_nav .wrap_nav h1 {
+  margin-right: 22px;
+  background: url("https://www.fate-go.jp/assets/img/pc/common/menu/logo.png");
+  width: 95px;
+  height: 55px;
+}
+.pc_mode .header_nav .wrap_nav .news {
+  background: url("https://www.fate-go.jp/assets/img/pc/common/menu/m_news.png");
+  width: 74px;
+}
+.pc_mode .header_nav .wrap_nav .world {
+  background: url("https://www.fate-go.jp/assets/img/pc/common/menu/m_world.png");
+  width: 125px;
+}
+.pc_mode .header_nav .wrap_nav .servant {
+  background: url("https://www.fate-go.jp/assets/img/pc/common/menu/m_servant.png");
+  width: 99px;
+}
+.pc_mode .header_nav .wrap_nav .howto {
+  background: url("https://www.fate-go.jp/assets/img/pc/common/menu/m_howtoplay.png");
+  width: 65px;
+}
+.pc_mode .header_nav .wrap_nav .gallery {
+  background: url("https://www.fate-go.jp/assets/img/pc/common/menu/m_gallery.png");
+  width: 87px;
+}
+.pc_mode .header_nav .wrap_nav .staffcast {
+  background: url("https://www.fate-go.jp/assets/img/pc/common/menu/m_staffcast.png");
+  width: 131px;
+}
+.pc_mode .header_nav .wrap_nav .music {
+  background: url("https://www.fate-go.jp/assets/img/pc/common/menu/m_music.png");
+  width: 50px;
+}
+.pc_mode .header_nav .wrap_nav .twitter {
+  background: url("https://www.fate-go.jp/assets/img/pc/common/menu/m_twitter.png");
+  width: 72px;
+}
+.pc_mode .header_nav .wrap_nav .faq {
+  background: url("https://www.fate-go.jp/assets/img/pc/common/menu/m_contact.png");
+  width: 108px;
+}
+
+.sp_mode .header_nav .header_logo {
+  background: url("https://www.fate-go.jp/assets/img/sp/common/header/bg_bar.png") center top;
+  height: 110px;
+  position: fixed;
+  width: 100%;
+  z-index: 500;
+}
+.sp_mode .header_nav .header_logo h1 {
+  background: url("https://www.fate-go.jp/assets/img/sp/common/header/logo.png");
+  width: 216px;
+  height: 110px;
+  margin: auto;
+}
+.sp_mode .header_nav .header_logo .nav_menu {
+  background: url("https://www.fate-go.jp/assets/img/sp/common/header/btn_menu.png");
+  width: 100px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.sp_mode .header_nav .header_logo .nav_menu.menu_open {
+  background: url("https://www.fate-go.jp/assets/img/sp/common/header/btn_close.png");
+}
+.sp_mode .header_nav .main_menu {
+  opacity: 0;
+  position: relative;
+  z-index: 490;
+  width: 100%;
+  top: 110px;
+  height: 0;
+  display: none;
+  overflow: hidden;
+}
+.sp_mode .header_nav .main_menu .wraper {
+  background: url("https://www.fate-go.jp/assets/img/sp/common/header/menu/bg_ptn.jpg");
+  position: fixed;
+  width: 100%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.sp_mode .header_nav .main_menu .global li {
+  width: 100%;
+  height: 98px;
+  border-bottom: 1px solid #feffe9;
+  position: relative;
+  z-index: 0;
+}
+.sp_mode .header_nav .main_menu .global li:nth-child(even):before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: rgba(103, 181, 255, 0.1);
+}
+.sp_mode .header_nav .main_menu .news {
+  background: url("https://www.fate-go.jp/assets/img/sp/common/header/menu/m_news.png");
+}
+.sp_mode .header_nav .main_menu .world {
+  background: url("https://www.fate-go.jp/assets/img/sp/common/header/menu/m_world.png");
+}
+.sp_mode .header_nav .main_menu .servant {
+  background: url("https://www.fate-go.jp/assets/img/sp/common/header/menu/m_servant.png");
+}
+.sp_mode .header_nav .main_menu .howto {
+  background: url("https://www.fate-go.jp/assets/img/sp/common/header/menu/m_howtoplay.png");
+}
+.sp_mode .header_nav .main_menu .gallery {
+  background: url("https://www.fate-go.jp/assets/img/sp/common/header/menu/m_gallery.png");
+}
+.sp_mode .header_nav .main_menu .staffcast {
+  background: url("https://www.fate-go.jp/assets/img/sp/common/header/menu/m_staffcast.png");
+}
+.sp_mode .header_nav .main_menu .music {
+  background: url("https://www.fate-go.jp/assets/img/sp/common/header/menu/m_music.png");
+}
+.sp_mode .header_nav .main_menu .twitter {
+  background: url("https://www.fate-go.jp/assets/img/sp/common/header/menu/m_twitter.png");
+}
+.sp_mode .header_nav .main_menu .faq {
+  background: url("https://www.fate-go.jp/assets/img/sp/common/header/menu/m_contact.png");
+}
+.sp_mode .header_nav .main_menu .menu_shere {
+  opacity: 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: auto;
+  height: 100%;
+  position: relative;
+  padding-top: 65px;
+  letter-spacing: -0.4em;
+  padding-bottom: 150px;
+}
+.sp_mode .header_nav .main_menu .menu_shere li {
+  display: inline-block;
+  margin: 0 8px;
+}
+.sp_mode .header_nav .main_menu.menu_open {
+  height: 100%;
+  display: block;
+  opacity: 1;
+}
+.sp_mode .header_nav .main_menu.menu_open .wraper {
+  opacity: 1;
+  height: 100%;
+}
+.sp_mode .header_nav .main_menu.menu_open .menu_shere {
+  display: block;
+  opacity: 1;
+}
+
+/**********************************/
+footer {
+  z-index: 10;
+}
+footer .game_info {
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
+  padding-top: 65px;
+  position: relative;
+}
+footer .game_info:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: url("https://www.fate-go.jp/assets/img/pc/common/line.png") repeat-x center;
+  position: absolute;
+  top: 1px;
+}
+footer .game_info .info dl {
+  font-size: 14px;
+  display: table;
+  margin-bottom: 10px;
+}
+footer .game_info .info dl dt {
+  background: url("https://www.fate-go.jp/assets/img/common/item_mark_white.png") no-repeat left top;
+  -webkit-background-size: 11px;
+  -o-background-size: 11px;
+  background-size: 11px;
+  padding-left: 20px;
+  display: table-cell;
+  width: 92px;
+  line-height: 1.65;
+  color: #d9d6bd;
+}
+footer .game_info .info dl dd {
+  display: table-cell;
+  line-height: 1.65;
+}
+footer .game_info .info dl dd .note {
+  font-size: 12px;
+  margin: 0.5em 0;
+}
+footer .game_info .app .logo {
+  margin-bottom: 25px;
+}
+footer .game_info .app .btn_app {
+  letter-spacing: -0.4em;
+}
+footer .game_info .app .btn_app li {
+  display: inline-block;
+}
+footer .footer {
+  background: #000;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  padding: 47px 0 65px;
+  position: relative;
+}
+footer .footer ul {
+  letter-spacing: -.4em;
+}
+footer .footer li {
+  display: inline-block;
+}
+footer .footer .share {
+  margin-bottom: 38px;
+}
+footer .footer .share li {
+  margin: 0 4px;
+}
+footer .footer .share li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+footer .footer .bnr {
+  letter-spacing: -.4em;
+  margin-bottom: 35px;
+}
+footer .footer .notes {
+  margin-bottom: 16px;
+}
+footer .footer p {
+  font-size: 11px;
+  color: #fff;
+}
+
+.pc_mode footer {
+  min-width: 1120px;
+}
+.pc_mode footer .game_info {
+  background: url("https://www.fate-go.jp/assets/img/pc/common/footer/bg.jpg") no-repeat center;
+  padding-bottom: 70px;
+}
+.pc_mode footer .game_info .wrap {
+  width: 1120px;
+  margin: auto;
+}
+.pc_mode footer .game_info .info {
+  float: left;
+  width: 660px;
+}
+.pc_mode footer .game_info .app {
+  float: right;
+  padding-left: 51px;
+  background: url("https://www.fate-go.jp/assets/img/pc/common/footer/line.png") no-repeat left center;
+  width: 360px;
+}
+.pc_mode footer .game_info .app .logo img {
+  width: 100%;
+}
+.pc_mode footer .game_info .app .btn_app li {
+  width: 170px;
+}
+.pc_mode footer .game_info .app .btn_app li img {
+  width: 100%;
+}
+.pc_mode footer .game_info .app .btn_app li a {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.pc_mode footer .game_info .app .btn_app li a:hover {
+  opacity: 0.6;
+}
+.pc_mode footer .game_info .app .btn_app .ios {
+  margin-right: 12px;
+  width: 147px
+}
+.pc_mode footer .footer:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: url("https://www.fate-go.jp/assets/img/pc/common/line.png") repeat-x center;
+  position: absolute;
+  top: -1px;
+  z-index: 0;
+}
+.pc_mode footer .footer .pagetop {
+  position: absolute;
+  top: -50px;
+  right: 40px;
+  z-index: 3;
+  background: url("https://www.fate-go.jp/assets/img/pc/common/footer/btn_pagetop.png");
+  width: 100px;
+  height: 52px;
+  cursor: pointer;
+}
+.pc_mode footer .footer .share li {
+  width: 67px;
+  height: 68px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.pc_mode footer .footer .share li:hover {
+  opacity: 0.6;
+}
+.pc_mode footer .footer .share .tw {
+  background: url("https://www.fate-go.jp/assets/img/pc/common/footer/share_twitter.png");
+}
+.pc_mode footer .footer .share .fb {
+  background: url("https://www.fate-go.jp/assets/img/pc/common/footer/share_facebook.png");
+}
+.pc_mode footer .footer .share .line {
+  background: url("https://www.fate-go.jp/assets/img/pc/common/footer/share_line.png");
+}
+.pc_mode footer .footer .bnr img {
+  width: 100%;
+}
+.pc_mode footer .footer .bnr li {
+  width: 280px;
+}
+.pc_mode footer .footer .bnr a {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.pc_mode footer .footer .bnr a:hover {
+  opacity: 0.6;
+}
+.pc_mode footer .footer .other {
+  margin-bottom: 25px;
+}
+.pc_mode footer .footer .other li {
+  letter-spacing: 0;
+  background: url("https://www.fate-go.jp/assets/img/common/item_mark_gold.png") no-repeat right center;
+  -webkit-background-size: 11px;
+  -o-background-size: 11px;
+  background-size: 11px;
+  padding: 5px 28px 5px 14px;
+}
+.pc_mode footer .footer .other li a {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 4px 0;
+  position: relative;
+}
+.pc_mode footer .footer .other li a:after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background: #FFF;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.pc_mode footer .footer .other li a:hover:after {
+  width: 100%;
+}
+.pc_mode footer .footer .other li:last-child {
+  background: none;
+  padding: 5px 14px 5px 14px;
+}
+
+.sp_mode footer .game_info {
+  background: url("https://www.fate-go.jp/assets/img/sp/common/footer/bg.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-bottom: 150px;
+}
+.sp_mode footer .game_info .info {
+  margin: 0 30px;
+}
+.sp_mode footer .game_info .info dl {
+  font-size: 24px;
+}
+.sp_mode footer .game_info .info dl dt {
+  background-position: left 0.3em;
+  -webkit-background-size: 14px;
+  -o-background-size: 14px;
+  background-size: 14px;
+  width: 6em;
+}
+.sp_mode footer .game_info .info dl dd .note {
+  font-size: 20px;
+  margin: 0.5em 0;
+}
+.sp_mode footer .game_info .app {
+  background: url("https://www.fate-go.jp/assets/img/sp/common/footer/line.png") no-repeat bottom;
+  text-align: center;
+  padding-bottom: 60px;
+  margin-bottom: 56px;
+}
+.sp_mode footer .game_info .app .logo {
+  margin-bottom: 30px;
+}
+.sp_mode footer .game_info .app li.ios {
+  margin-right: 18px;
+}
+.sp_mode footer .footer .pagetop {
+  background: url("https://www.fate-go.jp/assets/img/sp/common/footer/btn_pagetop.png");
+  height: 96px;
+  width: 100%;
+  position: absolute;
+  top: -94px;
+}
+.sp_mode footer .footer .other {
+  border-top: 1px solid #e8e4be;
+  margin-bottom: 60px;
+}
+.sp_mode footer .footer .other li {
+  display: block;
+  border-bottom: 1px solid #e8e4be;
+}
+.sp_mode footer .footer .other li a {
+  color: #FFF;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  background: url("https://www.fate-go.jp/assets/img/sp/common/footer/arrow.png") no-repeat 95% center;
+  padding: 28px 0;
+}
+.sp_mode footer .footer p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+.sp_mode footer .footer .notes {
+  margin-bottom: 33px;
+}
+
+/*******************/
+#news_color .article p{
+  text-align: left;
+}
